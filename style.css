@@ -260,11 +260,13 @@ body {
 }
 
 .under-line {
+  display: block;
   border: none;
   height: 3px;
   background-color: hsl(6, 82%, 59%);
-  width: 7%;
-  margin: 7px auto;
+  width: 6%;
+  margin: 10px auto;
+  flex-shrink: 0;
 }
 
 .main-program-card {

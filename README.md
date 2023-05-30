@@ -13,6 +13,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+- [🚀 Live Demo](#Live demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -28,11 +29,11 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Portfolio ] <a name="about-project"></a>
+# 📖 [Capstone ] <a name="about-project"></a>
 
 > This project is the first capstone project of the Full Stack Developer program offered by Microverse. It is about a fictional "Africom digital conference" that was created for the purpose of this web development project.
 
-**[Portfilio]** capstone project
+**[Capstone]** capstone project
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -40,10 +41,14 @@
 
 > HTML, CSS and javaScript
 
-## Key Features
+### Key Features
 
 - Responsive Home Page to showcase the event speakers and the program.
 - Responsive About Page that gives information about the event.
+
+## 🚀 Live Demo
+
+[Link to Live Demo](https://melkamu12.github.io/First_Capstone_Melkamu/)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 

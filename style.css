@@ -33,7 +33,7 @@ body {
   top: 0;
   width: 100%;
   height: 5vh;
-  background-color: #fff;
+  background-color: #eedfdfa8;
   z-index: 999;
   border-bottom: 1px solid hsl(0, 0%, 98%);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -147,19 +147,18 @@ body {
 /* Main Program */
 .main-banner {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   background-position: center;
   background-blend-mode: darken;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.5);
-  height: 720px;
+  height: 500px;
   background-image: url("Asset/Background_program.jpg"), none;
 }
 
 .hero {
-  padding-top: 10px;
-  width: 70%;
-  padding-bottom: 20px;
+  padding: 56px 11px 16px 47px;
+  width: 98%;
 }
 
 .main-content img {
@@ -168,11 +167,13 @@ body {
 }
 
 .promotion-title {
-  padding: 15px;
   font-size: 12px;
-  margin: 15px;
   border: 2px solid #fff;
+  width: 90%;
+  height: 140px;
   font-family: 'Lato', sans-serif;
+  justify-content: left;
+  align-items: flex-start;
   background-blend-mode: darken;
   background-color: rgba(255, 255, 255, 0.5);
 }
@@ -182,14 +183,14 @@ body {
 }
 
 .text-image {
-  padding: 90px 20px 16px 10px;
-  justify-content: center;
-  text-align: center;
+  justify-content: left;
+  text-align: left;
+  width: 90%;
   margin-right: 1px;
   font-family: 'Lato', sans-serif;
   font-weight: 600;
   font-size: 25px;
-  color: hsl(237, 94%, 34%);
+  color: hsl(0, 71%, 34%);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -263,19 +264,20 @@ body {
   height: 3px;
   background-color: hsl(6, 82%, 59%);
   width: 7%;
-  margin: 5px auto;
+  margin: 7px auto;
 }
 
 .main-program-card {
   margin: 8px;
   background-color: rgba(182, 180, 180, 0.1);
   font-family: 'Lato', sans-serif;
-  align-items: center;
+  align-items: flex-start;
   font-size: 13px;
   display: grid;
   grid-template-columns: 1fr 1fr 4fr;
   color: #fff;
-  padding: 20px 3px;
+  gap: 5px;
+  padding: 15px 3px;
 }
 
 .main-program-card:hover {
@@ -286,9 +288,11 @@ body {
   color: #ec5242;
   font-size: 13px;
   text-align: left;
-  max-width: 100%;
+  width: 80px;
   justify-content: center;
-  margin-right: auto;
+  align-items: center;
+  margin-right: 3px;
+  padding-top: 20px;
 }
 
 .program-card-wrapper {
@@ -301,18 +305,18 @@ body {
 
 .program-card-description {
   color: #fff;
-  width: 100%;
+  width: 98%;
   font-size: 12.5px;
   justify-content: left;
-  padding-left: 10px;
-  padding-bottom: 10px;
+  padding-right: 10px;
 }
 
 .program_icon {
-  max-height: 40px;
+  max-height: 60px;
   margin-left: 0;
-  padding-left: 15px;
+  padding-left: 4px;
   max-width: 100px;
+  align-self: flex-start; /* Align the icon to the top */
 }
 
 .speaker-info {
@@ -645,6 +649,11 @@ body {
 }
 
 @media (min-width: 768px) {
+  .hero {
+    padding: 90px 20px 16px 90px;
+    width: 60%;
+  }
+
   body {
     width: 100%;
     background: hsl(0, 0%, 90%);
@@ -752,16 +761,19 @@ body {
   }
 
   .text-image {
-    font-size: 50px;
+    width: 100%;
+    font-size: 40px;
+    text-align: left;
   }
 
   .promotion-title {
-    width: 75%;
-    height: 130px;
+    width: 90%;
+    padding: 30px 0;
+    height: 140px;
     font-size: 20.5px;
-    margin: 20px 100px;
-    justify-content: center;
-    align-items: center;
+    margin: 20px 10px;
+    justify-content: left;
+    align-items: flex-start;
   }
 
   .date-venue {
@@ -770,21 +782,21 @@ body {
 
   .date-venue h4 {
     font-family: 'Lato', sans-serif;
-    margin: 15px 15px 0 15px;
+    margin: 0 15px 0 35px;
     font-weight: 900;
     padding-top: 25px;
     color: #d3d3d3;
     display: flex;
-    justify-content: center;
+    justify-content: left;
   }
 
   .date-venue h6 {
     font-family: 'Lato', sans-serif;
-    margin: 0 15px 0 15px;
+    margin: 0 15px 0 35px;
     font-weight: 200;
     font-size: 27.6px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     padding-top: 5px;
     color: hsla(248, 88%, 49%, 0.915);
   }
@@ -912,6 +924,10 @@ body {
     padding-bottom: 25px;
   }
 
+  .main-banner {
+    height: 720px;
+  }
+
   .program-card-wrapper {
     display: flex;
     flex-direction: row;
@@ -923,27 +939,29 @@ body {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 0.5fr 0.5fr 3fr;
     gap: 3px;
+    padding: 10px;
   }
 
   .program_icon {
-    text-align: center;
-    width: 100px;
-    height: 100px;
-    gap: 10px;
-    margin: 0 auto;
+    width: 100%;
+    max-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-left: 80px;
   }
 
   .program_header {
     display: flex;
-    font-size: 20px;
+    width: 100%;
     justify-content: center;
     align-items: center;
-    padding-left: 20px;
     text-align: center;
     font-family: 'Lato', sans-serif;
     margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    height: 12px;
+    font-size: 18px;
+    font-weight: 700;
   }
 
   .program-card-description {
@@ -953,8 +971,9 @@ body {
     line-height: 24px;
     justify-content: center;
     align-items: center;
-    padding-left: 12px;
     font-family: 'Lato', sans-serif;
+    height: 30px;
+    padding-top: 30px;
   }
 
   .See-ticket {

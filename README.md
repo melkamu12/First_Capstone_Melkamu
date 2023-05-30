@@ -152,7 +152,8 @@ If you like this project clone on your project working space
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank microverse staff and Cindy Shin capstone UI design for Creative Commons License.
+- I would like to give proper recognition to [Cindy Shin](https://www.behance.net/adagio07) the [author of the original design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015). Furthermore, credit is due to [Pixels](https://www.pexels.com/) and [Flaticons](https://github.com/suthish777/global-summit/blob/desktop-version/flaticon.com) for providing the captivating images and icons, respectively.
+- I would like to express my gratitude to microverse for the training.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

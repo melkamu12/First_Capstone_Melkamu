@@ -40,8 +40,7 @@ body {
 }
 
 .logo-header {
-  width: 100%;
-  justify-content: right;
+  display: none;
 }
 
 .nav-bar-list {
@@ -147,13 +146,20 @@ body {
 
 /* Main Program */
 .main-banner {
-  padding-top: 10px;
+  display: flex;
+  justify-content: center;
   background-position: center;
   background-blend-mode: darken;
-  background-image: url("Asset/Background_program.jpg"), none;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.5);
-  height: 700px;
+  height: 720px;
+  background-image: url("Asset/Background_program.jpg"), none;
+}
+
+.hero {
+  padding-top: 10px;
+  width: 70%;
+  padding-bottom: 20px;
 }
 
 .main-content img {
@@ -178,11 +184,12 @@ body {
 .text-image {
   padding: 90px 20px 16px 10px;
   justify-content: center;
+  text-align: center;
   margin-right: 1px;
   font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  font-size: 30px;
-  color: hsl(2, 81%, 62%);
+  font-weight: 600;
+  font-size: 25px;
+  color: hsl(237, 94%, 34%);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -228,6 +235,14 @@ body {
   padding: 35px 35px 15px;
 }
 
+.speaker-photo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin: 10px;
+  width: 180px;
+  height: 90%;
+}
+
 .join-button {
   padding: 23px;
   width: 280px;
@@ -248,7 +263,7 @@ body {
   height: 3px;
   background-color: hsl(6, 82%, 59%);
   width: 7%;
-  margin: 0 auto;
+  margin: 5px auto;
 }
 
 .main-program-card {
@@ -256,12 +271,11 @@ body {
   background-color: rgba(182, 180, 180, 0.1);
   font-family: 'Lato', sans-serif;
   align-items: center;
-  height: 80px;
-  width: 90%;
   font-size: 13px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 4fr;
   color: #fff;
-  padding-right: 5px;
+  padding: 20px 3px;
 }
 
 .main-program-card:hover {
@@ -272,30 +286,33 @@ body {
   color: #ec5242;
   font-size: 13px;
   text-align: left;
-  width: 70px;
-  margin-right: 15px;
+  max-width: 100%;
   justify-content: center;
-  margin-left: 15px;
+  margin-right: auto;
 }
 
 .program-card-wrapper {
   padding-top: 15px;
   padding-bottom: 25px;
+  flex-direction: column;
+  display: flex;
+  margin: 0 auto;
 }
 
 .program-card-description {
   color: #fff;
-  width: 50%;
+  width: 100%;
   font-size: 12.5px;
-  padding: 10px 30px;
   justify-content: left;
+  padding-left: 10px;
+  padding-bottom: 10px;
 }
 
 .program_icon {
-  height: 40px;
+  max-height: 40px;
   margin-left: 0;
   padding-left: 15px;
-  width: auto;
+  max-width: 100px;
 }
 
 .speaker-info {
@@ -305,7 +322,8 @@ body {
 }
 
 .speaker-details {
-  padding-left: 20px;
+  width: 90%;
+  padding-left: 10px;
   padding-top: 20px;
 }
 
@@ -325,12 +343,13 @@ body {
 
 .speaker-details p {
   padding-top: 15px;
+  margin-right: 3px;
+  margin-bottom: 4px;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
-  line-height: 24px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   letter-spacing: -0.05em;
   color: hsla(0, 0%, 3%, 0.93);
   text-align: left;
@@ -461,6 +480,7 @@ body {
 .logo-submite {
   font-family: 'Lato', sans-serif;
   font-style: normal;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 30px;
   line-height: 28px;
@@ -644,6 +664,7 @@ body {
     justify-content: right;
     padding: 3px 130px 3px 20px;
     color: #fff;
+    align-items: center;
     text-align: left;
   }
 
@@ -652,6 +673,9 @@ body {
   }
 
   .logo-header {
+    display: flex;
+    width: 100%;
+    height: 100%;
     order: 0;
     padding-left: 0;
   }
@@ -892,40 +916,45 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
   }
 
   .main-program-card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 0.5fr 0.5fr 3fr;
+    gap: 3px;
+  }
+
+  .program_icon {
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    gap: 10px;
+    margin: 0 auto;
+  }
+
+  .program_header {
     display: flex;
-    flex-direction: column;
+    font-size: 20px;
+    justify-content: center;
     align-items: center;
-    width: 200px;
-    height: 231px;
-    padding: 30px 10px 0 10px;
-    cursor: pointer;
-  }
-
-  .main-program-card:hover {
-    background-color: hsl(223, 8%, 67%);
-  }
-
-  .main-program-card h4 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-    width: auto;
+    padding-left: 20px;
     text-align: center;
-    padding-top: 10px;
+    font-family: 'Lato', sans-serif;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .main-program-card p {
+  .program-card-description {
+    margin-top: 2px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 12px;
     font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: 12px;
-    width: auto;
-    text-align: center;
-    padding-top: 10px;
   }
 
   .See-ticket {
@@ -972,6 +1001,13 @@ body {
   .logoInfo {
     width: 100%;
     height: 491.28px;
+  }
+
+  .logoInfo p {
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    color: black;
   }
 
   .previous-submite {

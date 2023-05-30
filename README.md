@@ -152,7 +152,7 @@ If you like this project clone on your project working space
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank microverse staff and reviewer...
+I would like to thank microverse staff and Cindy Shin capstone UI design for Creative Commons License.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -1,10 +1,199 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="Asset/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>CC Global Summit 2015</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="header-Social-Link">
+        <ul class="social-link flex-row">
+          <li class="link-item">
+            <a href="#"><img src="Asset/logo-facebook.png" alt="FaceBook" /></a>
+          </li>
+          <li class="link-item">
+            <a href="#"><img src="Asset/logo-tweeter.png" alt="twitter" /></a>
+          </li>
+        </ul>
+        <ul class="social-link flex-row">
+          <li class="link-item">
+            <a href="#">Language</a>
+          </li>
+          <li class="link-item">
+            <a href="#">My Page</a>
+          </li>
+          <li class="link-item">
+            <a href="#">logout</a>
+          </li>
+        </ul>
+      </div>
+      <nav class="nav-bar flex-row">
+        <img
+          src="Asset/mobile_menu 1.png"
+          alt="Humbergen Icon"
+          class="nav-btn hamburg-icon"
+        />
+        <img
+          src="Asset/IconCancel.png"
+          alt="Close-icon-menu"
+          class="close-icon hidden"
+          id="close-btnicon"
+        />
+        <a href="index.html" class="logo-header nav-logo"
+          ><img src="Asset/logo.png" alt=""
+        /></a>
+        <ul class="nav-bar-list">
+          <li class="item"><a href="about.html">About</a></li>
+          <li class="item"><a>Program</a></li>
+          <li class="item"><a>Join</a></li>
+          <li class="item"><a>Sponsor</a></li>
+          <li class="item"><a>News</a></li>
+          <li class="item"><button>CC Campaign</button></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-continer">
+      <section class="main-banner">
+        <div class="hero">
+          <div id="main-content">
+            <h1 class="text-image flex-row">
+              THE LARGEST DIGITAL INFRASTRUCTURE EVENT IN AFRICA, FOCUSED ON
+              CONNECTING THE NEXT BILLION PEOPLE
+            </h1>
+          </div>
+          <div class="promotion-title">
+            <p>
+              Have you missed the opportunity to join Africa Tech Festival 2022
+              in Cape Town? Couldn't access the digital platform on the days of
+              the event? No problem, you can still watch the Broadband Africa
+              Forum and the Keynote Headlines from our three days of the event.
+              Get to see industry-leading experts discussing the future of
+              Africa's telecoms, connectivity, inclusion, cybercrime, fintech
+              and how to develop the skills needed to unlock Africa's 4IR.
+            </p>
+          </div>
+          <div class="date-venue">
+            <h4>2015.10.15(THU) ~ 16(FRI)</h4>
+            <h6>@ National Museum of Karea, Art Center Nabi and more</h6>
+          </div>
+        </div>
+      </section>
+      <section class="main-program">
+        <div class="container">
+          <h3 class="Program-title flex-row">Our Core Program</h3>
+          <hr class="under-line" />
+          <article class="program-card-wrapper">
+            <section class="main-program-card">
+              <img
+                class="program_icon"
+                src="Asset/program_icon_01.png"
+                alt=""
+              />
+              <h4 class="program_header">Keynote Addresses</h4>
+              <p class="program-card-description">
+                The keynote addresses provide an overview of the latest trends
+                in technology and their impact on Africa.
+              </p>
+            </section>
+            <section class="main-program-card">
+              <img
+                class="program_icon"
+                src="Asset/program_icon_02.png"
+                alt=""
+              />
+              <h4 class="program_header">Panel Discussions</h4>
+              <p class="program-card-description">
+                The panel discussions provide participants with the opportunity
+                to learn about the different perspectives on these issues.
+              </p>
+            </section>
+            <section class="main-program-card">
+              <img
+                class="program_icon"
+                src="Asset/program_icon_03.png"
+                alt=""
+              />
+              <h4 class="program_header">Workshops</h4>
+              <p class="program-card-description">
+                provide participants with the opportunity to learn about
+                specific technologies and how they can be used to address
+                challenges in Africa.
+              </p>
+            </section>
+            <section class="main-program-card">
+              <img
+                class="program_icon"
+                src="Asset/program_icon_04.png"
+                alt=""
+              />
+              <h4 class="program_header">Networking Events</h4>
+              <p class="program-card-description">
+                provide the opportunity to meet with each other and discuss the
+                issues that are important to them.
+              </p>
+            </section>
+            <section class="main-program-card">
+              <img
+                class="program_icon"
+                src="Asset/program_icon_05.png"
+                alt=""
+              />
+              <h4 class="program_header">Exhibition</h4>
+              <p class="program-card-description">
+                Great opportunity for businesses to generate leads and to make
+                connections with potential customers.
+              </p>
+            </section>
+          </article>
+          <a class="See-ticket flex-row" href="index.html"
+            >SEE THE WHOLE PROGRAM</a
+          >
+          <button class="join-button flex-row">
+            Join CC Global summit 2023
+          </button>
+        </div>
+      </section>
+
+      <section class="speakers">
+        <h3 class="speakers-title flex-row">Featured Speakers</h3>
+        <hr class="under-line" />
+        <div class="Speaker-content" data-expanded="false"></div>
+      </section>
+      <section id="partner">
+        <h2>Partner</h2>
+        <hr class="under-line" />
+        <div class="Partner_logo">
+          <img src="Asset/imgpartner1.png" alt="" />
+          <img src="Asset/imgpartner2.png" alt="" />
+          <img src="Asset/imgpartner3.png" alt="" />
+          <img src="Asset/imgpartner4.png" alt="" />
+          <img src="Asset/imgpartner5.png" alt="" />
+        </div>
+      </section>
+      <section class="footer">
+        <img src="Asset/cck-logo.png" alt="" />
+        <p>
+          2015 Creative Commons Korea. Some Rights
+          <br />
+          <br />
+          달리 정하지 않은 웹사이트의 모든 내용은 크리에이티브 커먼즈 저작자표시
+          2.0 대한민국 라이선스에 따라 이용할 수 있습니다. <br />
+          자세한 이용기능 내용과 허락조건은
+          http://creativecommons.org/licences/by/2.0/kr 를 보세요.
+        </p>
+      </section>
+    </main>
+    <script src="JS/menu.js"></script>
+    <script src="JS/SpeakerMarkupGenerat.js"></script>
+  </body>
 </html>
